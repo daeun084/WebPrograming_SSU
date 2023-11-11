@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>변수 선언</title>
+        </head>
+        <body>
+            <h3>변수 선언 전역/지역/블록 변수</h3>
+            <script>
+                let x; //전역변수
+                function f(){
+                    let y; //지역변수
+                    x = 10;
+                    y = 20;
+                    z = 30; //전역변수
+                    if(y==20){
+                        let b = 40; //지역변수
+                        b++;
+                        document.write("if문 내부 지역변수 b = "+b+"<br>");
+                    }
+                    document.write("함수 f 내부의 지역변수 y = "+y+"<br>");
+                }
+                f(); //f 호출
+                document.write("젼역변수 x = "+x +"<br>");
+                document.write("젼역변수 z = "+z);
+            </script>
+        </body>
+</html>
