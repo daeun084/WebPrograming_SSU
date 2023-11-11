@@ -10,9 +10,9 @@
     <h2>마우스를 올려보세요</h2> 
     html 문서의 이벤트 리스너에 JS코드 작성<br>
 
-    <img src="Image/spade-A.png" alt="spade-A"
-    onmouseover="this.src='Image/spade-7.png'"
-    onmouseout="this.src='Image/spade-A.png'"
+    <img src="../Image/spade-A.png" alt="spade-A"
+    onmouseover="this.src='../Image/spade-7.png'"
+    onmouseout="this.src='../Image/spade-A.png'"
     height="200px" width="200px">
 
     <hr>
@@ -22,14 +22,14 @@
 
     <script>
         function over(obj){
-            obj.src="Image/spade-7.png"
+            obj.src="../Image/spade-7.png"
         }
         function out(obj){
-            obj.src="Image/spade-A.png"
+            obj.src="../Image/spade-A.png"
         }
     </script> 
 
-    <img src="Image/spade-A.png" alt="spade-A"
+    <img src="../Image/spade-A.png" alt="spade-A"
         onmouseover="over(this)"
         onmouseout="out(this)"
         height="200px" width="200px">
@@ -38,7 +38,7 @@
     <!-- 외부방식 -->
     <!-- <h2>마우스를 올려보세요</h2> 외부 JS파일 불러오기<br>
 
-    <img src="Image/spade-A.png" alt="spade-A"
+    <img src="../Image/spade-A.png" alt="spade-A"
         onmouseover="over(this)"
         onmouseout="out(this)"
         height="200px" width="200px"> -->
