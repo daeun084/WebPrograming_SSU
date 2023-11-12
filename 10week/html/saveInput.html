@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>변수 명에 이름 저장하기</title>
+    <script>
+        function sub() {
+            //input 받아 저장
+            const name = prompt('이름을 입력해주세요:');
+            document.getElementById("test").innerHTML = "Welcome " + name;
+        }
+    </script>
+</head>
+<body>
+    <!-- 프롬프트 띄우는 버튼 -->
+    <button onclick="sub()">눌러주세요!</button>
+    <!-- 입력한 이름을 띄움 -->
+    <h2 id="test"></h2>
+</body>
+</html>

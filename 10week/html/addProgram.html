@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>덧셈기</title>
+        <script>
+            let x, y, result;
+            function xfunc(){
+            x = parseInt(prompt("x를 입력하세요"));
+            }
+            function yfunc(){
+                y = parseInt(prompt("y를 입력하세요"));
+                result = x+y;
+                document.getElementById("result").innerHTML = "결과 : " + result;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>덧셈 프로그램</h2>
+        <button onclick="xfunc()">정수1 입력하기</button> <br>
+        <button onclick="yfunc()">정수2 입력하기</button> <br><br>
+        <h3 id="result"></h3>
+    </body>
+</html>
