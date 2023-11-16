@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript 전역함수</title>
+        <script>
+            function evalParseIntIsNaN(){
+                let evalString = "2*3 + 4*6";
+                let res = eval(evalString); //res는 30
+                document.write("eval("+ evalString +")은 "+res + "<br>");  
+
+                let m = parseInt("32");
+                document.write("parseInt(\"32\")는 "+m + "<br>"); 
+
+                let n = parseInt("0x32");
+                document.write("parseInt(\"0x32\")는 "+n + "<br>"); 
+                
+                let h = parseInt("hello"); //정수 변환 불가
+                if(isNaN(h)){
+                    document.write("\"hello\"는 숫자가 아닙니다" + "<br>");
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>eval(), parseInt(), isNaN()</h3> <hr>
+        <script>
+            evalParseIntIsNaN();
+        </script>
+
+    </body>
+</html>
