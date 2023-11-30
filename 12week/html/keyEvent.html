@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function whatKeyDown(e){
+                let str="";
+                let div = document.getElementById("div");
+                div.innerHTML=""; //이너 텍스트 초기화
+                str+="e.key = "+e.key+"<br>";
+                str+="e.code = "+e.code+"<br>";
+                div.innerHTML = str;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>키 이벤트 리스너</h3><hr>
+        텍스트 창에 키를 눌러보세요 <br>
+            <input type="text" id="text" onkeydown="whatKeyDown(event)">
+            <div id="div" style="background-color:skyblue; width:250px; height:50px">
+            </div>
+        
+            <br><br><br>
+        
+            <h3>상하좌우 키로 셀 이동하기</h3>
+            
+    </body>
+</html>

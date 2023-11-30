@@ -75,3 +75,47 @@
     - 추가된 태그들은 DOM 객체로 변환되어 트리에 추가됨
 - writeln → write에 “\n”을 덧붙여 한 칸 띄어 출력함
     - 한 줄 띄어 출력하려면 `document.write(”<br>”);`
+  
+<br><br><hr><br>
+
+
+### 동적 이미지 생성
+
+- `let bananaImg = new Image()`
+    - 동적으로 이미지 객체 생성
+- `bababaImg.src = “banana.png”;`
+    - 이미지 로딩
+- `myImg.src = bananaImg.src;`
+    - 이미지 출력
+
+### 포커스
+
+현재 키 입력에 대한 독점권 <br>
+브라우저는 포커스를 가지고 있는 HTML 요소에게 키를 공급함
+
+- `onblur`
+    - 포커스를 잃을 때 발생하는 리스너
+- `onfocus`
+    - 포커스를 얻을 때 발생하는 리스너
+
+
+### Select
+
+\<select\> 태그로 만들어지는 객체 → select 객체
+
+- 선택된 옵션 알아내기
+    
+    `let sel = document.getElementById("fruits");` <br>
+    `let index = sel.selectedIndex; 		// index는 선택 상태의 옵션 인덱스`
+    
+- 옵션 선택하기
+    
+    `sel.selectedIndex = 2;  // 3번째 옵션 “사과” 선택` <br>
+    `sel.options[2].selected = true;  // 3번째 옵션 “사과” 선택`
+    
+
+선택된옵션이 변경되면 `onChange`에서 리스너 호출
+
+<br><br>
+
+# Key Event
