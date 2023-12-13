@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>timeout method</title>
+        <style>
+            div{
+                background-color: green;
+                color: white;
+                padding: 10px;
+            }
+            p{
+                background-color: aqua;
+                padding: 10px;
+            }
+        </style>
+        <script>
+
+            let timerID = null;
+            function startTimer(time){
+                timerID = setTimeout("load('https://naver.com')",time);
+                
+
+            }
+            function stopTimer(){
+                if(timerID!=null){
+                    clearTimeout(timerID);
+                }
+
+            }
+            function load(URL){
+                let newWin = window.open(URL);
+            }
+
+            
+
+        </script>
+    </head>
+    <body>
+        <h2>DIV에 마우스를 5초동안 올리면 네이버 페이지로 이동합니다</h2> <br>
+        <div id="naverDiv" onmouseover="startTimer(5000)" onmouseout="stopTimer()">NAVER</div>
+
+        <br><br><br>
+        <h2>텍스트가 자동회전하며 마우스로 클릭하면 중단됩니다</h2>
+        <p>자동 회전하는 텍스트</p>
+
+
+    </body>
+</html>
